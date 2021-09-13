@@ -15,11 +15,15 @@ function App() {
   return (
     <div className='appContainer'>
         <Router>
+          <Switch>
             <Route exact path="/" component={Landing} hideNavBar={true}/>
-              <Route path='/' component={NavBar}/>
-              <Route path="/about" component={About}/>
-              <Route path="/skills" component={Skills}/>
-              <Route path="/projects" component={Projects}/>
+              <div>
+                <NavBar/>
+                <Route path="/about" component={About}/>
+                <Route path="/skills" component={Skills}/>
+                <Route path="/projects" component={Projects}/>
+              </div>
+          </Switch>
         </Router>
     </div>
   );

@@ -11,12 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.appContainer{
+.appContainer>div{
   font-family: 'Courier New', Courier, monospace;
   display:flex
 }
 @media(max-width:900px){
-  .appContainer{
+  .appContainer>div{
    flex-direction: column;
  }
 }

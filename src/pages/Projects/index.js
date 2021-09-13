@@ -1,5 +1,6 @@
 import paintApp from '../../assets/images/paintAPP.png'
 import todoApp from '../../assets/images/todoApp.png'
+import weatherApp from '../../assets/images/weatherApp.png'
 
 import './index.css'
 
@@ -19,6 +20,13 @@ export default function Projects() {
             image: paintApp,
             link: 'https://leomonay-paintapp.herokuapp.com/'
         },
+        {
+          id: 'weatherApp',
+          name: 'WeatherApp',
+          description: 'App that allows to know the weather in a specific city',
+          image: weatherApp,
+          link: 'https://weather-leomonay.vercel.app/'
+        }
     ]
     function createProject(project){
         const buttonBackground = project.image?{'background-image':`url(${project.image})`}:{'background':`lightgrey`}
@@ -28,7 +36,7 @@ export default function Projects() {
         return(
             <div className='projectContainer'>
                 <h4>{project.name}</h4>
-                <a href={link.href} target={link.target}>
+                <a href={link.href} target={link.target} rel="noreferrer">
                     <button className='projectButton' id={project.id} style={buttonBackground}>
                     </button>
                 </a>

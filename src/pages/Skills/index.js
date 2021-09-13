@@ -1,5 +1,3 @@
-import TagCloud from "TagCloud"
-
 import js from '../../assets/icons/JS.png'
 import html from '../../assets/icons/HTML.png'
 import css from '../../assets/icons/CSS.png'
@@ -80,7 +78,7 @@ export default function About() {
         <h1>MY SKILLS</h1>
       </div>
       <div className='contentDescription'>
-        <p>I attended the <a href='https://www.soyhenry.com/' target='_blank'><b>soyhenry.com</b></a> bootcamp, which consists of more than 700 hours of study and practical projects, both individual and group.</p>
+        <p>I attended the <a href='https://www.soyhenry.com/' target='_blank' rel="noreferrer"><b>soyhenry.com</b></a> bootcamp, which consists of more than 700 hours of study and practical projects, both individual and group.</p>
         <p>Since then, I have worked as Testing Engineer for Globant, as Evaluation tutor on Tecla Coding Academy and on some freelance projects</p>
         <div className='skillsContent'>
           {skillSections(Skills)}

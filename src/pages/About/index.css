@@ -42,7 +42,9 @@
     display:flex;
 }
 
-.descriptionImage
+.descriptionImg{
+    margin: 10px
+}
 .extras{
     display: flex;
     flex-wrap: wrap;

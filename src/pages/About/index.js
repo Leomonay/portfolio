@@ -17,7 +17,7 @@ export default function About() {
             <p>I am a mobile & web full stack developer located in Argentina.</p>
             <div className='descriptionItem'>
               <p>Maths and physics lover, analytical and logical thinker. Very practical problem solver, independent with high attention to detail.</p>
-              <img className='descriptionPhoto' src={teseract} alt=''/>
+              <img className='descriptionImg' src={teseract} alt=''/>
             </div>
           </div>
         </div>

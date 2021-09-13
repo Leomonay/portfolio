@@ -33,7 +33,7 @@
     align-items: flex-start;
     margin: 1rem;
 }
-.descriptionPhoto{
+.descriptionImg{
     width: 10rem;
     border-radius: 50%;
     background: linear-gradient(45deg, silver, whitesmoke);
@@ -59,4 +59,15 @@
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+@media(max-width:900px){
+    .descriptionItem{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .descriptionImg{
+        display:none
+    }
 }

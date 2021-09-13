@@ -1,0 +1,30 @@
+.projectGallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    text-align: justify;
+    margin: 1rem;
+    border-radius: 2rem;
+    background: linear-gradient(-45deg, dodgerblue, darkslateblue);
+    padding: 1rem
+}
+.projectContainer>h4{
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+.projectButton{
+    height: 10rem;
+    width: 10rem;
+    background-size:100% 100%;
+}
+.projectButton>img{
+    height: 100%;
+    width: 100%;
+}

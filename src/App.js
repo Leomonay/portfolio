@@ -1,32 +1,27 @@
-import React from "react";
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from "react-router-dom";
-import{Home,About,Projects,Contact}from "./Components"
-import Nav from "./Components/nav"
+} from 'react-router-dom'
+import './App.css';
+import Landing from './pages/Landing'
+import About from './pages/About'
+import NavBar from './Components/navBar/index'
+import Skills from './pages/Skills/index'
+import Projects from './pages/Projects/index'
 
 function App() {
   return (
-    <Router>
-          <Route path="/">
-            <Nav />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-    </Router>
+    <div className='appContainer'>
+        <Router>
+            <Route exact path="/" component={Landing} hideNavBar={true}/>
+              <Route path='/' component={NavBar}/>
+              <Route path="/about" component={About}/>
+              <Route path="/skills" component={Skills}/>
+              <Route path="/projects" component={Projects}/>
+        </Router>
+    </div>
   );
 }
 

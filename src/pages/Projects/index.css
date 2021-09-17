@@ -28,3 +28,6 @@
     height: 100%;
     width: 100%;
 }
+.projectDescription{
+    text-indent: 1rem;
+}

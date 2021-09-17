@@ -1,6 +1,7 @@
 import paintApp from '../../assets/images/paintAPP.png'
 import todoApp from '../../assets/images/todoApp.png'
 import weatherApp from '../../assets/images/weatherApp.png'
+import movieSearch from '../../assets/images/movieSearch.png'
 
 import './index.css'
 
@@ -26,6 +27,13 @@ export default function Projects() {
           description: 'App that allows to know the weather in a specific city',
           image: weatherApp,
           link: 'https://weather-leomonay.vercel.app/'
+        },
+        {
+          id: 'movieSearcher',
+          name: 'Movie Searcher',
+          description: 'App that allows to search films in Internet Movie Data Base (IMDB), and select favorites. No storage, so it resets when refreshed',
+          image: movieSearch,
+          link: 'https://leomonay-movie-searcher.vercel.app/'
         }
     ]
     function createProject(project){

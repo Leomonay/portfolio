@@ -10,6 +10,7 @@ import About from './pages/About'
 import NavBar from './Components/navBar/index'
 import Skills from './pages/Skills/index'
 import Projects from './pages/Projects/index'
+import Contact from './pages/Contact/index'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/about" component={About}/>
                 <Route path="/skills" component={Skills}/>
                 <Route path="/projects" component={Projects}/>
+                <Route path="/contact" component={Contact}/>
               </div>
           </Switch>
         </Router>

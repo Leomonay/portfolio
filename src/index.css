@@ -15,9 +15,13 @@ code {
   font-family: 'Courier New', Courier, monospace;
   display:flex
 }
-@media(max-width:900px){
+@media(max-width:768px){
   .appContainer>div{
-   flex-direction: column;
- }
+    flex-direction: column;
+    height: 100vh;
+  }
+  .appContainer{
+    height: 100%;
+  }
 }
 

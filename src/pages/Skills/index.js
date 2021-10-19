@@ -18,9 +18,10 @@ import testNG from '../../assets/icons/TestNG.png'
 import selenium from '../../assets/icons/selenium-logo.png'
 import appium from '../../assets/icons/Appium.png'
 
-
-
 import './index.css'
+
+const stack = {js, html, css, ReactJS, Redux, java, node, express, sequelize, postgre, postman, mongo}
+export {stack}
 
 export default function About() {
   const Skills={
@@ -55,9 +56,9 @@ export default function About() {
   function skillSection(object,prop){
     return(
       <div className='aboutSkills' key={prop}>
-        <div className='skillsTitle contentTitle'>{prop}</div>
+        <div className='itemSubtitle'>{prop}</div>
         <div className='skillIcons'>
-        {object[prop].map(skillDiv)}
+          {object[prop].map(skillDiv)}
         </div>
       </div>
     )
@@ -74,15 +75,15 @@ export default function About() {
 
   return (
     <div className='contentContainer'>
-      <div className='contentTitle'>
-        <h1>MY SKILLS</h1>
-      </div>
-      <div className='contentDescription'>
-        <p>I attended the <a href='https://www.soyhenry.com/' target='_blank' rel="noreferrer"><b>soyhenry.com</b></a> bootcamp, which consists of more than 700 hours of study and practical projects, both individual and group.</p>
-        <p>Since then, I have worked as Testing Engineer for Globant, as Evaluation tutor on Tecla Coding Academy and on some freelance projects</p>
-        <div className='skillsContent'>
+        <div className='pageTitle'>MY SKILLS</div>
+        <div className='contentDescription'>
+          <div className='contentText'>
+            <div className='paragraph'>I attended the <a className='linkInText' href='https://www.soyhenry.com/' target='_blank' rel="noreferrer"><b>soyhenry.com</b></a> bootcamp, which consists of more than 700 hours of study and practical projects, both individual and group.</div>
+            <div className='paragraph'>Since then, I have worked as Testing Engineer for Globant, as Evaluation tutor on Tecla Coding Academy and on some freelance projects</div>
+          </div>
+          <div className='skillsContent'>
           {skillSections(Skills)}
-        </div>
+          </div>
       </div>
    </div>
   );
